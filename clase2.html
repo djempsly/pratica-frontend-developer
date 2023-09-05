@@ -11,14 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
         <style>
-       
-            body{
-                margin: 0;
-                font-family: 'Quicksand', sans-serif;
-            }
-
-       
-        :root{
+           :root{
             --white: #FFFFFF; 
             --black: #000000; 
             --very-light-pink: #C7C7C7;
@@ -28,7 +21,10 @@
             --md:16px;
             --lg:18px;
         }
-      
+            body{
+                margin: 0;
+                font-family: 'Quicksand', sans-serif;
+            }
     
       .login{
         width: 100%;
@@ -41,6 +37,7 @@
         display: grid;
         grid-template-rows: auto 1fr auto;
         width: 300px;
+        justify-items: center;
 
       }
 
@@ -66,28 +63,22 @@
         text-align: center;
       }
 
-      .form{
-        display: flex;
-        flex-direction: column;
-      }
-
-      .label{
-        font-size: var(--sm);
-        font-weight: bold;
-        margin-bottom: 4px;
-
-      }
-
-      .input{
+      .email-image{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
         background-color: var(--text-input-field);
-        border: none;
-        border-radius: 8px;
-        height: 30px;
-        font-size: var(--md);
-        padding: 6px;
-        margin-bottom: 12px;
-
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        
       }
+
+      .email-image img{
+       width: 80px;
+      }
+     
       .primary-button{
         background-color: var(--hospital-green);
         border-radius: 8px;
@@ -105,6 +96,23 @@
         margin-top: 20px;
       }
 
+      .resend{
+        margin-top: 5px;
+      }
+
+      .resend span{
+        font-size: var(--md);
+        color: var(--text-input-field);
+        font-weight: bold;
+
+      }
+
+      .resend a{
+        text-decoration: none;
+        color: var(--hospital-green);
+
+      }
+
       @media (max-width:640px){
         .logo{
             display: block;
@@ -118,26 +126,24 @@
 <body>
     <div class="login">
         <div class="form-container">
-            <img src="./logos/logo_yard_sale.jpg" alt="logo" class="logo">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
            
-            <h1 class="tittle">Creat a new password</h1>
-            <p class="subtittle"> A new password for your account</p>
+            <h1 class="tittle">Email has been sent!</h1>
+            <p class="subtittle"> Please check your inbox for instructions on how to reset the password</p>
 
-            <form action="/" class="form">
-                <label for="password" class="password">Password</label>
-                <input type="password" placeholder="********" 
-                id="password" class="input input-password">
-    
-                <label for="new-password" class="password">New password</label>
-                <input type="password" placeholder="********" 
-                id="new-password" class="input input-password">
-    
-                <input type="submit" class="primary-button login-button" value="confirm">
-            </form>
+            <div class="email-image">
+                <img src="./icons/email.svg" alt="email">
+              </div>
+              <button class=" primary-button login-button"> Login</button>
+              <p class="resend">
+                  <span>
+                      Didn´t receive the email?
+                  </span>
+                  <a href="/">
+                      resent
+                  </a>
+              </p>
         </div>
-
-      
-
     </div>
 </body>
 </html>

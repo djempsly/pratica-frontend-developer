@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <style>
+       
+        :root{
+            --white: #FFFFFF; 
+            --black: #000000; 
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7; 
+            --hospital-green: #ACD9B2; 
+            --sm: 14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+                margin: 0;
+                font-family: 'Quicksand', sans-serif;
+            }
+            .my-order{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                padding-top: 60px;
+
+                
+            }
+            .tittle{
+                justify-content: start;
+                font-weight: bold;
+                font-size: var(--lg);
+            }
+
+            .my-order-container{
+                width: 100%;
+              border-radius: 6px;
+
+            }
+
+            .my-order-content{
+                  display: flex;
+                background-color: rgb(147, 144, 144);
+                border-radius: 8px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                padding: 0 8px
+
+            }
+            .total-order{
+                color: var(--very-light-pink);
+            }
+
+            .my-order-content div p{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .my-order-article{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+            }
+
+            .my-order-article figure{
+                width: 100%;
+                margin: 6px 0 0 0;
+               
+            }
+
+            .my-order-article figure img{
+                width: 80px;
+                border-radius: 6px;
+                padding: 0;
+                object-fit: cover;
+            }
+            .order-descripcion{
+                margin-top: 0;
+                color: var(--very-light-pink);
+            }
+            @media (max-width:640px){
+                .tittle{
+                    display: none;
+                }
+            }
+
+        
+        </style>
+
+</head>
+<body>
+   <div class="my-order">
+    <p class="tittle">My order</p>
+    <div class="my-order-container">
+        <div class="my-order-content">
+            <div>
+                <p>
+                    <span class="fecha">
+                        07.09.199
+                    </span>
+                    <span class="total-order">
+                        6 order
+                    </span>
+                </p>
+            </div>
+           
+            <p class="monto-total">
+                $ 8620.00
+            </p>
+        </div>
+
+        <div class="my-order-article">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+                </figure>
+                <p class="order-descripcion">
+                    Laptop
+                </p>
+
+            </div>
+            <div>
+                <p><span class="product-price">
+                    $130.00
+                </span></p>
+            </div>
+          
+        </div>
+        <div class="my-order-article">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+                </figure>
+                <p class="order-descripcion">
+                    Laptop
+                </p>
+
+            </div>
+            
+            <p><span class="product-price">
+                $130.00
+            </span></p>
+        </div>
+        <div class="my-order-article">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+                </figure>
+                <p class="order-descripcion">
+                    Laptop
+                </p>
+
+            </div>
+            
+            <p><span class="product-price">
+                $130.00
+            </span></p>
+        </div>
+        <div class="my-order-article">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+                </figure>
+                <p class="order-descripcion">
+                    Laptop
+                </p>
+
+            </div>
+            
+            <p><span class="product-price">
+                $130.00
+            </span></p>
+        </div>
+        <div class="my-order-article">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+                </figure>
+                <p class="order-descripcion">
+                    Laptop
+                </p>
+
+            </div>
+            
+            <p><span class="product-price">
+                $130.00
+            </span></p>
+        </div>
+        <div class="my-order-article">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+                </figure>
+                <p class="order-descripcion">
+                    Laptop
+                </p>
+
+            </div>
+            
+            <p><span class="product-price">
+                $130.00
+            </span></p>
+        </div>
+        
+    </div>
+   </div>
+   
+</body>
+</html>

@@ -51,21 +51,6 @@
         display: none;
       }
 
-      .tittle{
-        font-size: var(--lg);
-        margin-bottom: 12px;
-        text-align: center;
-      }
-
-      .subtittle{
-        color: var(--very-light-pink);
-        font-size: var(--md);
-        font-weight: 300;
-        margin-top: 0;
-        margin-bottom: 32px;
-        text-align: center;
-      }
-
       .form{
         display: flex;
         flex-direction: column;
@@ -105,9 +90,34 @@
         margin-top: 20px;
       }
 
+      .forgotpassword{
+        color: var(--hospital-green);
+        text-decoration: none;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+
+      .secondary-button{
+        background-color: var(--white);
+        border: 1px solid var(--hospital-green);
+        height: 64px;
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        color: var(--hospital-green);
+        border-radius: 5%;
+      }
+
       @media (max-width:640px){
         .logo{
             display: block;
+        }
+        .form{
+          display: block;
+        }
+        .secondary-button{
+          margin-top: 150px;
         }
       }
 
@@ -120,24 +130,22 @@
         <div class="form-container">
             <img src="./logos/logo_yard_sale.jpg" alt="logo" class="logo">
            
-            <h1 class="tittle">Creat a new password</h1>
-            <p class="subtittle"> A new password for your account</p>
-
             <form action="/" class="form">
-                <label for="password" class="password">Password</label>
-                <input type="password" placeholder="********" 
-                id="password" class="input input-password">
+                <label for="email" class="password">Email</label>
+                <input type="email" placeholder="lhams@example.com" 
+                id="email" class="input input-email">
     
-                <label for="new-password" class="password">New password</label>
+                <label for="new-password" class="password">Password</label>
                 <input type="password" placeholder="********" 
                 id="new-password" class="input input-password">
     
-                <input type="submit" class="primary-button login-button" value="confirm">
+                <input type="submit" class="primary-button login-button" value="Log in">
+
+                <a href="/" class="forgotpassword">Forgot my password</a>
+                
             </form>
+            <button class="secondary-button">Sing up</button>
         </div>
-
-      
-
     </div>
 </body>
 </html>
